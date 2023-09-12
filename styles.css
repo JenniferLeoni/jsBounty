@@ -1,0 +1,109 @@
+/* Body styles */
+body {
+    background: linear-gradient(#e3e0f8,#878cd8)
+}
+
+/* Header styles */
+header {
+    background: linear-gradient(to right, #444dc4, #1d1552); /* Gradient background */
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Cart icon styles */
+.cart {
+    position: relative;
+    display: inline-block;
+    margin-left: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.cart-count {
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    background-color: #dc3545;
+    color: white;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    text-align: center;
+}
+
+/* Main content layout styles */
+.main-content {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* Product list styles */
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+    padding-right: 150px;
+}
+
+/* Product card styles */
+.product {
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+    max-width: 250px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: relative;
+    transition: transform 0.2s ease-in-out; /* Add a subtle hover effect */
+    background-image: linear-gradient(rgba(255,0,0,0), rgb(202, 207, 243));
+}
+
+.product:hover {
+    transform: scale(1.05); /* Scale up on hover */
+}
+
+.product img {
+    max-width: 100%;
+    height: auto;
+}
+
+.price {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Beautiful buttons */
+.add-to-cart,
+.remove-from-cart {
+    background: linear-gradient(to right, #007bff, #0056b3); /* Gradient background for buttons */
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 10px;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 25px; /* Rounded corners */
+    transition: background-color 0.2s ease-in-out; /* Smooth hover effect */
+}
+
+.add-to-cart:hover,
+.remove-from-cart:hover {
+    background: linear-gradient(to right, #0056b3, #007bff); /* Gradient background on hover */
+}
+
+/* Shopping cart styles */
+.shopping-cart {
+    background-color: #f7f7f7;
+    padding: 20px;
+    width: 300px; 
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: fixed; 
+    top: 80px; 
+    right: 20px;
+}
